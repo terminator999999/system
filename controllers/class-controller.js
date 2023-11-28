@@ -2,6 +2,7 @@ const Sclass = require('../models/sclassSchema.js');
 const Student = require('../models/studentSchema.js');
 const Subject = require('../models/subjectSchema.js');
 const Teacher = require('../models/teacherSchema.js');
+const Base_URL = process.env.Base_URL
 
 const sclassCreate = async (req, res) => {
     try {

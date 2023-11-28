@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const Student = require('../models/studentSchema.js');
 const Subject = require('../models/subjectSchema.js');
-
+const Base_URL = process.env.Base_URL
 const studentRegister = async (req, res) => {
     try {
         const salt = await bcrypt.genSalt(10);

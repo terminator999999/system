@@ -1,5 +1,5 @@
 const Notice = require('../models/noticeSchema.js');
-
+const Base_URL = process.env.Base_URL
 const noticeCreate = async (req, res) => {
     try {
         const notice = new Notice({
